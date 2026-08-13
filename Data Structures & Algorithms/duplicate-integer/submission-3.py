@@ -1,0 +1,6 @@
+from collections import Counter
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        if Counter(nums) == Counter(set(nums)):
+            return False
+        return True
